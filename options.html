@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Auto Pin Url - Options</title>
+    <link rel="icon" type="image/png" href="icon.png"/>
+    <link href="fonts/raleway.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <style>
+        body {
+            padding-top: 40px;
+        }
+        textarea {
+            height: 10em;
+            width: 32em;
+            margin-bottom: 1em;
+            border: solid 1px rgba(0, 0, 0, .25);
+            background-color: #fff;
+            box-shadow: 0 3px 15px #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="two-thirds column">
+
+            <h1>Auto Pin URL &mdash; <em>Options</em></h1>
+
+            <div class="row">
+                <h5>Url List &ndash; One per line</h5>
+                <textarea id="urlList"></textarea>
+            </div>
+
+            <div class="row">
+                <button id="button-save" class="button-primary">Save Now</button>
+                <span id="message-saved" style="opacity: 0;"><strong>Saved</strong></span>
+            </div>
+
+            <div class="row">
+                <h5>Help</h5>
+                <p>Add urls in the textbox above, one per line, to have them<br/>
+                automatically pin the tab when visiting the page.</p>
+
+                <p>If any part of the url contains one of the entries, it will<br/>
+                trigger the tab to become pinned.</p>
+
+                <p>For more advanced users, you may also use regular expressions<br/>to match patterns in the url.</p>
+                <p>
+                    <strong>Examples :</strong><br>
+                    <span><code>google.com</code></span> URLs containing `google.com`<br/>
+                    <span><code>[1-9]</code></span> URLs containing digits<br/>
+                    <span><code>o{2,}</code></span> URLs containing 2 or more `o` in a row.
+                </p>
+            </div>
+
+            <div class="row">
+                <h5>About</h5>
+                <p>
+                    Auto Pin URL v0.1 - <i>Extension for Opera</i><br/>
+                    by <a href="http://bast.me" target="_blank">Bastien Launay</a> &lt;gmail:bastien.launay&gt;<br/>
+                    Released Under MIT License.
+                </p>
+            </div>
+
+        </div>
+        <div class="one-third column">
+            <img src="icon.png" id="icon" alt="Auto Pin Url icon"/>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="options.js"></script>
+</html>

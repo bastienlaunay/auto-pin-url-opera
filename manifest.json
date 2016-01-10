@@ -1,0 +1,31 @@
+{
+  "name": "Auto Pin URL",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "Automatically pin certain url's",
+  "developer": {
+    "name": "Bastien Launay",
+    "url": "http://bast.me"
+  },
+  "homepage_url": "http://bast.me",
+  "icons": {
+    "128": "icon.png"
+  },
+  "key": "f3sfShkduUswQtsUQdrsRwAYmfb3tzX9",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["inject.js"]
+    }
+  ],
+
+  "options_page": "options.html",
+  "permissions": [
+    "tabs"
+  ]
+}

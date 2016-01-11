@@ -12,7 +12,6 @@
   "icons": {
     "128": "icon.png"
   },
-  "key": "f3sfShkduUswQtsUQdrsRwAYmfb3tzX9",
 
   "background": {
     "scripts": ["background.js"]
@@ -26,6 +25,7 @@
 
   "options_page": "options.html",
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ]
 }
